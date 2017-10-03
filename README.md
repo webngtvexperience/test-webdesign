@@ -1,7 +1,7 @@
 # Test Webdesign
 
 ## Ennoncé
-Mettre de la forme au fichier `index.php` en utilisant [Bootstrap](https://getbootstrap.com/) et/ou du `CSS`.
+Mettre de la forme au fichier `index.html` en utilisant [Bootstrap](https://getbootstrap.com/) et/ou du `CSS`.
 
 ## Ce qui est attendu
 Savoir integrer `bootstrap`, utiliser `CSS` et connaitre `git`.
