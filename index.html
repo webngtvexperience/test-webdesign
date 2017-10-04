@@ -1,18 +1,65 @@
-<html>
-    <head>
-    </head>
-    <body>
-        <!-- Ajouter un logo au choix -->
-        <h1>Connexion</h1>
-        <form action="test">
-            <!-- Ajouter un input de votre choix pour demander le titre (M ou Mme) -->
-            Name
-            <input type="text" name="lastname"><br>
-            Firstname
-            <input type="text" name="firstname"><br>
-            Description
-            <input type="textarea" name="description"><br>
-            <button type="submit">connect!</button>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Document</title>
+</head>
+
+<body>
+
+    <img src="img/logo.png">
+    <br>
+    <h1>Connexion</h1>
+
+    <div id="contact-form">
+        <div>
+
+
+        </div>
+        <p id="failure">Oopsie...message not sent.</p>
+        <p id="success">Your message was sent successfully. Thank you!</p>
+
+        <form method="post" action="/">
+            <div>
+                <label for="civilite">
+                            <span> </span>
+                                <select id="civilitet" name="civilite" tabindex="4">   
+                                   <option value="mr">MR</option>
+                                   <option value="mme">MME</option>  
+                                   <option value="mlle">MLLE </option>
+                                </select>
+                            </label>
+                <label for="name">
+                          <span class="required"></span> 
+                          <input type="text" id="name" name="lastname" value="" placeholder="Last Name" required="required" tabindex="1" autofocus="autofocus" />
+                      </label>
+            </div>
+            <div>
+                <label for="lastname">
+                          
+                          <input type="text" id="lastname" name="firstname" value="" placeholder="First Name" tabindex="2" required="required" />
+                      </label>
+            </div>
+            <div>
+
+            </div>
+            <div>
+                <label for="message">
+                          
+                          <textarea id="message" name="description" placeholder="Please write your message here." tabindex="5" required="required"></textarea> 
+                      </label>
+            </div>
+            <div>
+                <button name="submit" type="submit" id="submit">CONNECT</button>
+            </div>
+            <br>
         </form>
-    </body>
+        <br>
+    </div>
+</body>
+
 </html>
