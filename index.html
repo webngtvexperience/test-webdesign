@@ -1,18 +1,34 @@
-<html>
-    <head>
-    </head>
-    <body>
-        <!-- Ajouter un logo au choix -->
-        <h1>Connexion</h1>
-        <form action="test">
-            <!-- Ajouter un input de votre choix pour demander le titre (M ou Mme) -->
-            Name
-            <input type="text" name="lastname"><br>
-            Firstname
-            <input type="text" name="firstname"><br>
-            Description
-            <input type="textarea" name="description"><br>
-            <button type="submit">connect!</button>
-        </form>
-    </body>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>Formulaire de Connexion</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600" rel="stylesheet">
+</head>
+<body>
+	<main class="flex-container">
+		<div class="middle-screen">
+			<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 64 64" style="" xml:space="preserve">
+			<path class="st0" d="M32,13C14.3,13,0,21.6,0,32.2c0,2.3,0.9,5.9,2.1,6.4c1.2,0.5,4.5,1.8,33.4-10.2c0,0-24.3,10.9-26.2,15.6
+				C8.6,45.6,15,51,32,51c17.7,0,32-8.4,32-19C64,21.4,49.7,13,32,13z"/>
+			</svg>
+			<h1>Connexion</h1>
+			<div class="form">
+				<div class="background-form"></div>
+				<form>
+					<button type="button" class="btn space-top btn-active" id="male">M</button>
+					<button type="button" class="btn space-top" id="female">Mme</button>
+					<input type="text" placeholder="Nom">
+					<input type="text" placeholder="Prénom">
+					<textarea placeholder="Message"></textarea>
+					<button type="submit" class="btn btn-submit">Connect !</button>
+				</form>
+			</div>
+		</div>
+	</main>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script src="js/script.js"></script>
+</body>
 </html>
